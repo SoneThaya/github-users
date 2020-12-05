@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { GithubContext } from "../context/context";
 import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
-import Doughnut2d from "./Charts/Doughnut2d";
 
 const Repos = () => {
   const { repos } = React.useContext(GithubContext);
@@ -64,7 +63,7 @@ const Repos = () => {
         {/* <ExampleChart data={chartData} /> */}
         <Pie3D data={mostUsed} />
         <Column3D data={stars} />
-        <Doughnut2d data={mostPopular} />
+        <Doughnut2D data={mostPopular} />
         <Bar3D data={forks} />
       </Wrapper>
     </section>
